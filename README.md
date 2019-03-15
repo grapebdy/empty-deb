@@ -1,7 +1,8 @@
 # empty-deb
 this is empty deb generation env
-## 1) create software directory, like pcie-utils
+## 1) create software directory like pcie-utils, and copy install files
       $ mkdir -p ./opt/pcie-utils
+      $ cp -fr software_path/ ./opt/pcie-utils/
 
 ## 2) create scritps in DEBIAN folder
       postinst:  postinstallation
