@@ -1,17 +1,22 @@
 # empty-deb
 this is empty deb generation env
-## 1) create software directory like pcie-utils, and copy install files
+## 1) install deb package, folder contains releases
+      $ make install
+      $ ls
+	deb-rel-20190315-c9112b7
+
+## 2) create software directory like pcie-utils in deb-rel-, and copy install files
       $ mkdir -p ./opt/pcie-utils
       $ cp -fr software_path/ ./opt/pcie-utils/
 
-## 2) create scritps in DEBIAN folder
+## 3) create scritps in DEBIAN folder
       postinst:  postinstallation
       postrm:    postremove
       preinst:   preinstallation
       prerm:     preremove
 
-## 3) generate deb package
-      $ dpkg-deb -b empty-deb pcie-utils-linux-i386.deb
+## 4) generate deb package
+      $ dpkg-deb -b deb-rel-20190315-c9112b7 pcie-utils-linux-i386.deb
 
-## 4) install deb
+## 5) install deb
       $ dpkg  -i pcie-utils-linux-i386.deb
