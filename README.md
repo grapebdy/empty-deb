@@ -4,6 +4,10 @@ this is empty deb generation env
       $ mkdir -p ./opt/pcie-utils
 
 ## 2) create scritps in DEBIAN folder
+      postinst:  postinstallation
+      postrm:    postremove
+      preinst:   preinstallation
+      prerm:     preremove
 
 ## 3) generate deb package
       $ dpkg-deb -b empty-deb pcie-utils-linux-i386.deb
