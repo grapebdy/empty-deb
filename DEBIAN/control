@@ -1,10 +1,10 @@
 Package: pcie-utils
-Version: 3.8-2019.03.15
+Version: 3.8
 Section: utils
 Priority: optional
 Depends:
 Suggests:
-Architecture: i386
+Architecture: amd64
 Installed-Size: 4096
 Maintainer: qqliang
 Provides: qqliang
