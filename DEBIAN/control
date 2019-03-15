@@ -1,0 +1,11 @@
+Package: pcie-tools
+Version: 3.8-2019.03.15
+Section: utils
+Priority: optional
+Depends:
+Suggests:
+Architecture: i386
+Installed-Size: 4096
+Maintainer: qqliang
+Provides: qqliang
+Description: Pcie SDK. Built by qqliang
