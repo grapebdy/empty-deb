@@ -3,7 +3,7 @@ this is empty deb generation env
 ## 1) install deb package, folder contains releases
       $ make install
       $ ls
-	deb-rel-20190315-c9112b7
+      deb-rel-20190315-c9112b7
 
 ## 2) create software directory like pcie-utils in deb-rel-, and copy install files
       $ mkdir -p ./opt/pcie-utils
