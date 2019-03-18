@@ -14,8 +14,6 @@ install:
 	@rm -fr $(INSTALLDIR) deb-rel-*.tar.gz
 	@mkdir $(INSTALLDIR)
 	@cp -rf DEBIAN $(INSTALLDIR)
-	@cp -rf install.sh $(INSTALLDIR)
-
 
 clean:
 	@rm -rf deb-rel-*

@@ -1,2 +1,7 @@
 #!/bin/bash
+
+#home dir of dpkg(current dir)
+FULLPTH=
+PROJDIR=../$FULLPTH/
+
 echo "pre install"
