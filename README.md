@@ -20,3 +20,6 @@ this is empty deb generation env
 
 ## 5) install deb
       $ dpkg  -i pcie-utils-linux-i386.deb
+
+## 6) extract deb to dir
+      $ dpkg-deb -x pcie-utils-linux-i386.deb .
