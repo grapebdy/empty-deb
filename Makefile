@@ -5,7 +5,7 @@ INSTALLDIR :=$(PWD)/$(RELNAME)
 
 all: release
 
-release: install
+release: install version
 	@tar czmf $(RELNAME).tar.gz $(RELNAME)
 	@rm -fr $(INSTALLDIR)
 
@@ -13,6 +13,9 @@ install: clean
 	@echo "clean old release...."
 	@mkdir $(INSTALLDIR)
 	@cp -rf DEBIAN $(INSTALLDIR)
+
+version:
+	@echo $(RELNAME) > version
 
 clean:
 	@rm -rf deb-*
